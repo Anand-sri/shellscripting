@@ -18,3 +18,5 @@ echo -e "\e[41;33mYELLOW on RED\e[0m"
 echo -e "\e[42;34mBLUE on GREEN\e[0m"
 
 echo -e "\e[33mnormal YELLOW, -\e[1;33mbold on yellow\e[0m"
+
+echo -e "\e[4mHello World\e[0m"
