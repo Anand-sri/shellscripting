@@ -1,3 +1,5 @@
 #!bin/bash
 
-echo hello world
+echo hello
+
+echo -e "hi all \n\good morning welcome the meeeting\n\regards\n\anand"
