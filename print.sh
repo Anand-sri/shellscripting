@@ -15,3 +15,4 @@ echo -e "\e[36mCYNA TEXT "
 so we can disable the colour in the server we can select the in next lines we can excute the below commands
 
 echo -e "\e[41;33mYELLOW on RED\e[0m"
+echo -e "\e[42:34mBLUE on GREEN\e[0m"
