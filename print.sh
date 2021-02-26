@@ -11,3 +11,7 @@ echo -e "\e[33mYELLOW TEXT"
 echo -e "\e[34mBLUE TEXT"
 echo -e "\e[35mMAGENTA TEXT"
 echo -e "\e[36mCYNA TEXT "
+
+so we can disable the colour in the server we can select the in next lines we can excute the below commands
+
+echo -e "\e[41;33mYELLOW on RED\e[0m"
