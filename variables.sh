@@ -10,9 +10,9 @@ echo anand course learnng
 COURSE_NAME=anand
 
 
-echo Hi welocme to COURSE_NAME training instute
+echo Hi welocme to $COURSE_NAME training instute
 
-echo learning COURSE_NAME anand training
+echo learning $COURSE_NAME anand training
 
-echo anand COURSE_NAME learnng
+echo anand $COURSE_NAME learnng
 
