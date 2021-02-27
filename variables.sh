@@ -1,18 +1,18 @@
 #!bin/bash
 
 
-Hi welocme to anand training instute
+echo Hi welocme to anand training instute
 
-learning course anand training
+echo learning course anand training
 
-anand course learnng
+echo anand course learnng
 
 COURSE_NAME=anand
 
 
-Hi welocme to COURSE_NAME training instute
+echo Hi welocme to COURSE_NAME training instute
 
-learning COURSE_NAME anand training
+echo learning COURSE_NAME anand training
 
-anand COURSE_NAME learnng
+echo anand COURSE_NAME learnng
 
