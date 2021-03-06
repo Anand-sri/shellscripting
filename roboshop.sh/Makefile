@@ -1,5 +1,5 @@
 Frontend:
-     @sh components/frontend.sh
+     @sh components/Frontend.sh
 mongo:
      @sh components/mongo.sh
 
