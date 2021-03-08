@@ -23,3 +23,5 @@ case $USER_ID in
   exit 1
   ;;
 esac
+LOG_FILE=/tmp/roboshop.log
+rm -f $LOG_FILE
