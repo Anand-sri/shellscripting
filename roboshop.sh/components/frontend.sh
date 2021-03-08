@@ -7,3 +7,5 @@ INFO "installing nginx"
 SUCC "installed nginx"
 FAIL "installed nginx"
 
+yum install nginx -y
+
