@@ -25,3 +25,14 @@ case $USER_ID in
 esac
 LOG_FILE=/tmp/roboshop.log
 rm -f $LOG_FILE
+
+STAT() {
+  case $1 in
+    0)
+      SUCC "$2"
+      ;;
+    *)
+      FAIL "$2"
+      ;;
+  esac
+}
