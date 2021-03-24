@@ -34,7 +34,6 @@ STAT $? "extract the mongodb schema"
 INFO "Load Schema - Catalogue Service"
 mongo < catalogue.js &>>$LOG_FILE
 STAT $? "Catalogue Schema Load"
-
 INFO "Load Schema - Users Service"
 mongo < users.js &>>$LOG_FILE
 STAT $? "Users Schema Load"
