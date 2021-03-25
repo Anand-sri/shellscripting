@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPONENT=user
+COMPONENT=User
 source components/common.sh
 
 INFO "install nodejs application"
