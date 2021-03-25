@@ -9,3 +9,10 @@ yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y &>>$LOG_FI
 yum-config-manager --enable remi &>>$LOG_FILE
 yum install redis -y &>>$LOG_FILE
 STAT $? "installed repos"
+
+INFO "update the redis ip configuration"
+sed -i 's/127.0.0.1/0.0.0.0/' /etc/redis.conf
+INFO "restart redis database service"
+systemctl enable redis
+systemctl start redis
+STAT $? "start the redis service"
