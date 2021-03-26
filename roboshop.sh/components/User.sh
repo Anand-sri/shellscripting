@@ -14,5 +14,10 @@ DOWNLOAD_ARTIFACT "https://dev.azure.com/DevOps-Batches/f635c088-1047-40e8-8c29-
 cd /home/roboshop
 mkdir user
 INFO "unzip the user.zip files"
-unzip /tmp/user.zip &>>$LOG_FILE
+unzip /tmp/User.zip &>>$LOG_FILE
 STAT $? "unzip the user files"
+INFO "Install NodeJS dependencies"
+npm install --unsafe-perm  &>>$LOG_FILE
+STAT $? "NodeJS Dependencies Installation"
+
+chown roboshop:roboshop /home/roboshop/${COMPONENT} -R
