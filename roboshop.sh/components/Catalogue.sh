@@ -20,7 +20,7 @@ mkdir catalogue
 cd catalogue
 
 INFO "extract the unzip files"
-unzip /tmp/catalogue.zip &>>$LOG_FILE
+sudo unzip /tmp/catalogue.zip &>>$LOG_FILE
 STAT $? " unzip the cataguale file"
 
 INFO "Install NodeJS dependencies"
