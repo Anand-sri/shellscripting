@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPONENT=User
+COMPONENT=user
 source components/common.sh
 
 INFO "install nodejs application"
@@ -19,5 +19,18 @@ STAT $? "unzip the user files"
 INFO "Install NodeJS dependencies"
 npm install --unsafe-perm  &>>$LOG_FILE
 STAT $? "NodeJS Dependencies Installation"
-
 chown roboshop:roboshop /home/roboshop/user -R
+INFO "Configuring User Startup Script "
+sed -i -e "s/MONGO_ENDPOINT/172.31.49.210/" -e "s/REDIS_ENDPOINT/172.31.26.184/" /home/roboshop/${COMPONENT}/systemd.service
+STAT $? "Startup script configuration"
+
+
+INFO "Setup SystemD Service for User"
+mv /home/roboshop/${COMPONENT}/systemd.service /etc/systemd/system/${COMPONENT}.service
+systemctl daemon-reload
+STAT $? "User SystemD Service"
+
+INFO "Starting User Service"
+systemctl enable ${COMPONENT} &>>$LOG_FILE
+systemctl restart ${COMPONENT} &>>$LOG_FILE
+STAT $? "User Service Start"

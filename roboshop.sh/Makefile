@@ -10,6 +10,6 @@ catalogue: common
 	@sh components/Catalogue.sh
 Redis: common
 	@sh components/Redis
-User: common
+user: common
 	@sh components/User.sh
 
