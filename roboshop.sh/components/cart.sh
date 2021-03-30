@@ -28,7 +28,7 @@ STAT $? "NodeJS Dependencies Installation"
 
 chown roboshop:roboshop /home/roboshop/${COMPONENT} -R
 INFO "Configuring Catalogue Startup Script "
-sed -i -e "s/CATALOGUE_ENDPOINT/172.31.87.44/" -e "s/REDIS_ENDPOINT/172.31.26.184/" /home/roboshop/cart/systemd.service
+sed -i -e "s/CATALOGUE_ENDPOINT/172.31.53.173/" -e "s/REDIS_ENDPOINT/172.31.26.184/" /home/roboshop/cart/systemd.service
 STAT $? "Startup script configuration"
 INFO "Setup SystemD Service for Catalogue"
 mv /home/roboshop/cart/systemd.service /etc/systemd/system/cart.service
