@@ -1,7 +1,7 @@
 #!/bin/bash
 
 COMPONENT=cart
-source components/cart.sh
+source components/common.sh
 
 INFO "Install nodejs application"
 yum install nodejs make gcc-c++ -y &>>$LOG_FILE
