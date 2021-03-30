@@ -22,7 +22,7 @@ npm install --unsafe-perm  &>>$LOG_FILE
 STAT $? "NodeJS Dependencies Installation"
 chown roboshop:roboshop /home/roboshop/user -R
 INFO "Configuring User Startup Script "
-sed -i -e "s/MONGO_ENDPOINT/172.31.49.210/" -e "s/REDIS_ENDPOINT/172.31.26.184/" /home/roboshop/user/systemd.service
+sed -i -e "s/MONGO_ENDPOINT/172.31.63.145/" -e "s/REDIS_ENDPOINT/172.31.26.184/" /home/roboshop/user/systemd.service
 STAT $? "Startup script configuration"
 
 INFO "Setup SystemD Service for User"
