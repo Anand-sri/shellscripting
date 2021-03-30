@@ -12,4 +12,5 @@ Redis: common
 	@sh components/Redis
 user: common
 	@sh components/User.sh
-
+cart: common
+	@sh components/cart.sh
